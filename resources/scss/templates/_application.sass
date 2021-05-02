@@ -1,0 +1,88 @@
+#application
+  background: $gray-lighter
+  display: flex
+  font-family: Roboto
+  flex-direction: row
+  height: 100vh
+  padding: 0 1.5rem 1rem 0
+  &-content
+    display: flex
+    flex-direction: column
+    flex-basis: 0
+    flex-grow: 1
+
+  #left-sidebar
+    display: flex
+    flex-direction: column
+    padding-bottom: 1rem
+    padding-left: 1rem
+    padding-right: 1rem
+    padding-top: $sidebar-padding-top
+    transition: width 100ms
+    width: $sidebar-width-lg
+    @media (max-width: 1400px)
+      width: $sidebar-width-md
+
+    .left-sidebar-nav
+      .nav
+        &-item
+          padding: 0.5rem 0
+        &-link
+            align-items: center
+            border-radius: 0.5rem
+            color: darken($primary-color, 40%)
+            font-weight: 500
+            display: flex
+            opacity: .75
+            padding-bottom: 1rem
+            padding-left: 1.25rem
+            padding-top: 1rem
+            position: relative
+            transition: background-color 100ms, color 100ms
+            .icon
+              display: block
+              font-size: 1.5rem
+              width: 30px
+            .title
+              display: block
+              margin-left: 1rem
+              @media (max-width: 1400px)
+                display: none
+            &:hover
+              background: rgba($primary-color, .1)
+              opacity: 1
+            &.active
+              color: $primary-color
+              opacity: 1
+              &:before
+                background: $primary-color
+                border-radius: 50%
+                content: ''
+                display: block
+                height: 14px
+                left: 0
+                position: absolute
+                top: 50%
+                transform: translate(-50%, -50%)
+                width: 14px
+            &-logout
+              background: rgba($red, .1)
+              color: $red
+              font-weight: 500
+              &:hover
+                  background: rgba($red, .2)
+  
+  #main
+    background: $light
+    border-radius: 2.5rem
+    flex-basis: 0
+    flex-grow: 1
+    padding: $content-padding
+  
+  .navbar
+    height: $navbar-height
+    padding-left: 0
+    padding-right: 0
+
+  .application-footer
+    padding-top: 1rem

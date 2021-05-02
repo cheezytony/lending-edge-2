@@ -1,0 +1,25 @@
+$black: #000;
+$black-light: #232323;
+$black-lighter: #888;
+$border-color:#EEE;
+$green: #198754;
+$gray-lighter: #eff4f5;
+$light: #fff;
+// $primary-color: #635CDB;
+$primary-color: #173b65;
+$red: #DC3545;
+$secondary-color: rgb(243, 161, 9);
+$gray: #F4F4F4;
+
+$primary-font:'Poppins', sans-serif;
+$secondary-font:'Rubik', sans-serif;
+
+$fs-small: .8rem;
+
+$content-padding: 3rem;
+
+$navbar-height: 80px;
+
+$sidebar-padding-top: calc(#{$navbar-height} + #{$content-padding});
+$sidebar-width-md: 100px;
+$sidebar-width-lg: 250px;

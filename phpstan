@@ -1,0 +1,157 @@
+ ------ ----------------------------------------------------------------------------- 
+  Line   Channels/SmsChannel.php                                                      
+ ------ ----------------------------------------------------------------------------- 
+  18     Call to an undefined method Illuminate\Notifications\Notification::toSms().  
+  20     Cannot call method routeNotificationFor() on class-string|object.            
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Http/Controllers/Api/V1/Onboarding/BankAccountController.php                                                                                                         
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  35     PHPDoc tag @param references unknown parameter: $verificationService                                                                                                 
+  38     Property App\Http\Controllers\Api\V1\Onboarding\BankAccountController::$user (App\Models\User|null) does not accept Illuminate\Contracts\Auth\Authenticatable|null.  
+  70     Access to constant HTTP_BAD_REQUEST on an unknown class App\Http\Controllers\Api\V1\Onboarding\Response.                                                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                                                                   
+  75     Access to constant HTTP_BAD_REQUEST on an unknown class App\Http\Controllers\Api\V1\Onboarding\Response.                                                             
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                                                                   
+  85     Access to constant HTTP_UNPROCESSABLE_ENTITY on an unknown class App\Http\Controllers\Api\V1\Onboarding\Response.                                                    
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                                                                   
+  86     Parameter #3 $responseCode of method App\Http\Controllers\Controller::errorResponse() expects int, array<string, array|string|null> given.                           
+  92     Access to constant HTTP_UNPROCESSABLE_ENTITY on an unknown class App\Http\Controllers\Api\V1\Onboarding\Response.                                                    
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                                                                   
+  93     Parameter #3 $responseCode of method App\Http\Controllers\Controller::errorResponse() expects int, array<string, array|string|null> given.                           
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Http/Controllers/Api/V1/Onboarding/BvnController.php                                                                                                                      
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  51     Property App\Http\Controllers\Api\V1\Onboarding\BvnController::$user (App\Models\User|null) does not accept Illuminate\Contracts\Auth\Authenticatable|null.               
+  102    Return typehint of method App\Http\Controllers\Api\V1\Onboarding\BvnController::store() has invalid type App\Http\Controllers\Api\V1\Onboarding\type.                     
+  120    Method App\Http\Controllers\Api\V1\Onboarding\BvnController::store() should return App\Http\Controllers\Api\V1\Onboarding\type but returns Illuminate\Http\JsonResponse.  
+  128    Method App\Http\Controllers\Api\V1\Onboarding\BvnController::store() should return App\Http\Controllers\Api\V1\Onboarding\type but returns Illuminate\Http\JsonResponse.  
+  153    Method App\Http\Controllers\Api\V1\Onboarding\BvnController::store() should return App\Http\Controllers\Api\V1\Onboarding\type but returns Illuminate\Http\JsonResponse.  
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+  Line   Http/Middleware/Authenticate.php                                                                                  
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+  17     Method App\Http\Middleware\Authenticate::redirectTo() should return string|null but return statement is missing.  
+ ------ ------------------------------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Http/Requests/V1/Authentication/RegisterRequest.php                                                                                                                              
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  27     Method App\Http\Requests\V1\Authentication\RegisterRequest::rules() should return array<string> but returns array<string, array<int, App\Rules\PhoneNumberRule|string>|string>.  
+ ------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------- 
+  Line   Models/User.php                                        
+ ------ ------------------------------------------------------- 
+  148    Unreachable statement - code above always terminates.  
+ ------ ------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+  Line   Models/Verification.php                                                                                                
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+  76     Parameter $query of method App\Models\Verification::scopeBvnVerification() has invalid typehint type App\Models\type.  
+  78     Call to method where() on an unknown class App\Models\type.                                                            
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                     
+  88     Parameter $query of method App\Models\Verification::scopeNotExpired() has invalid typehint type App\Models\type.       
+  90     Call to method where() on an unknown class App\Models\type.                                                            
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                     
+  100    Parameter $query of method App\Models\Verification::scopePending() has invalid typehint type App\Models\type.          
+  102    Call to method where() on an unknown class App\Models\type.                                                            
+         💡 Learn more at https://phpstan.org/user-guide/discovering-symbols                                                     
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Notifications/V1/Onboarding/CompletedNotification.php                                                                                                      
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  45     Method App\Notifications\V1\Onboarding\CompletedNotification::toMail() should return Illuminate\Notifications\Messages\MailMessage but returns             
+         App\Mail\V1\Onboarding\CompletedMail.                                                                                                                      
+  55     Return typehint of method App\Notifications\V1\Onboarding\CompletedNotification::toSms() has invalid type Illuminate\Notifications\Messages\NexmoMessage.  
+  57     Method App\Notifications\V1\Onboarding\CompletedNotification::toSms() should return Illuminate\Notifications\Messages\NexmoMessage but returns string.     
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Notifications/V1/Verification/CompletedNotification.php                                                                                           
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------- 
+  23     Access to an undefined property App\Notifications\V1\Verification\CompletedNotification::$verification.                                           
+  45     Access to an undefined property App\Notifications\V1\Verification\CompletedNotification::$verification.                                           
+  45     Method App\Notifications\V1\Verification\CompletedNotification::toMail() should return Illuminate\Notifications\Messages\MailMessage but returns  
+         App\Mail\V1\Verification\CompletedMail.                                                                                                           
+  58     Access to an undefined property App\Notifications\V1\Verification\CompletedNotification::$verification.                                           
+  59     Access to an undefined property App\Notifications\V1\Verification\CompletedNotification::$verification.                                           
+ ------ -------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   Notifications/V1/Verification/RequestNotification.php                                                                                                      
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  66     Return typehint of method App\Notifications\V1\Verification\RequestNotification::toSms() has invalid type Illuminate\Notifications\Messages\NexmoMessage.  
+  68     Method App\Notifications\V1\Verification\RequestNotification::toSms() should return Illuminate\Notifications\Messages\NexmoMessage but returns string.     
+ ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------ 
+  Line   Services/BankAccountService.php                                                     
+ ------ ------------------------------------------------------------------------------------ 
+  13     Access to an undefined property App\Services\BankAccountService::$paystackService.  
+  23     Access to an undefined property App\Services\BankAccountService::$paystackService.  
+  28     Access to an undefined property App\Services\BankAccountService::$paystackService.  
+ ------ ------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------ 
+  Line   Services/PaystackService.php                                            
+ ------ ------------------------------------------------------------------------ 
+  169    Access to an undefined property App\Services\PaystackService::$errors.  
+  185    Access to an undefined property App\Services\PaystackService::$errors.  
+  211    Access to an undefined property App\Services\PaystackService::$errors.  
+  238    Access to an undefined property App\Services\PaystackService::$errors.  
+ ------ ------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------------------------------- 
+  Line   Traits/HasUuid.php (in context of class App\Models\BankAccount)                                                            
+ ------ --------------------------------------------------------------------------------------------------------------------------- 
+  17     Instanceof between App\Models\BankAccount and Illuminate\Database\Eloquent\Relations\Pivot will always evaluate to false.  
+ ------ --------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  Line   Traits/HasUuid.php (in context of class App\Models\Bvn)                                                            
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+  17     Instanceof between App\Models\Bvn and Illuminate\Database\Eloquent\Relations\Pivot will always evaluate to false.  
+ ------ ------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+  Line   Traits/HasUuid.php (in context of class App\Models\Profile)                                                            
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+  17     Instanceof between App\Models\Profile and Illuminate\Database\Eloquent\Relations\Pivot will always evaluate to false.  
+ ------ ----------------------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------------------- 
+  Line   Traits/HasUuid.php (in context of class App\Models\User)                                                            
+ ------ -------------------------------------------------------------------------------------------------------------------- 
+  17     Instanceof between App\Models\User and Illuminate\Database\Eloquent\Relations\Pivot will always evaluate to false.  
+ ------ -------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------------------------------- 
+  Line   Traits/HasUuid.php (in context of class App\Models\Verification)                                                            
+ ------ ---------------------------------------------------------------------------------------------------------------------------- 
+  17     Instanceof between App\Models\Verification and Illuminate\Database\Eloquent\Relations\Pivot will always evaluate to false.  
+ ------ ---------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   Traits/ReturnsAuthenticationResponse.php (in context of class App\Http\Controllers\Controller)      
+ ------ ---------------------------------------------------------------------------------------------------- 
+  31     PHPDoc tag @param for parameter $token with type string|null is not subtype of native type string.  
+  36     Call to an undefined method Illuminate\Auth\AuthManager::factory().                                 
+  64     PHPDoc tag @param for parameter $token with type string|null is not subtype of native type string.  
+  69     Call to an undefined method Illuminate\Auth\AuthManager::factory().                                 
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ -- ---------------------------------------------------------------------------------------- 
+     Error                                                                                   
+ -- ---------------------------------------------------------------------------------------- 
+     Ignored error pattern #Unsafe usage of new static# was not matched in reported errors.  
+ -- ---------------------------------------------------------------------------------------- 
+
+ [ERROR] Found 51 errors                                                                                                
+

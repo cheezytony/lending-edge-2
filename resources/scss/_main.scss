@@ -1,0 +1,27 @@
+:root {
+  --header-height: 100px;
+  scroll-padding-top: var(--header-height);
+  scroll-behavior: smooth;
+}
+
+.card {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  &-primary {
+    background: $primary-color;
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
